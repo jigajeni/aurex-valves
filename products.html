@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | Aurex Flow Controls</title>
+  <meta name="description" content="Browse Aurex ball, gate, globe, butterfly, check and plug valves with full specifications.">
+  <link rel="icon" href="assets/ball.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="products">
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a> / Products</div>
+        <h1>Product Catalogue</h1>
+        <p>Filter by valve type or search by material, standard or industry to find the right valve for your application.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="toolbar">
+          <div class="filters" role="group" aria-label="Filter by valve type">
+            <button class="filter active" data-type="all">All</button>
+            <button class="filter" data-type="ball">Ball</button>
+            <button class="filter" data-type="gate">Gate</button>
+            <button class="filter" data-type="globe">Globe</button>
+            <button class="filter" data-type="butterfly">Butterfly</button>
+            <button class="filter" data-type="check">Check</button>
+            <button class="filter" data-type="plug">Plug</button>
+          </div>
+          <label class="search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="search" id="search" placeholder="Search e.g. API 6D, CF8M, water…" aria-label="Search products">
+          </label>
+        </div>
+        <p class="result-count" id="result-count"></p>
+        <div class="grid-3" id="product-grid"></div>
+        <div class="empty" id="empty">
+          <h3>No matching products</h3>
+          <p>Try a different keyword, or <a href="contact.html#enquiry" style="color:var(--amber-dark);font-weight:600">ask our engineers</a> for a custom solution.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-bottom:96px">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2>Need a Custom Configuration?</h2>
+            <p>Special materials, extended stems, actuated packages: we build to your datasheet.</p>
+          </div>
+          <a href="contact.html#enquiry" class="btn btn--dark">Talk to an Engineer</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <div class="modal-media"></div>
+      <div class="modal-content"></div>
+    </div>
+  </div>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
